@@ -1,0 +1,12 @@
+
+USE h90ncfx3ux3kkw9y;
+
+CREATE TABLE blog
+(
+id INT NOT NULL AUTO_INCREMENT,
+user_name VARCHAR(255) NOT NULL,
+brewery VARCHAR(255),
+main_text_field VARCHAR(1000) NOT NULL,
+comments VARCHAR(1000),
+PRIMARY KEY(id)
+); 

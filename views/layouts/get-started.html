@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The To-Brew List Get Started</title>
+</head>
+<body>
+
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="../../public/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="../../public/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+<br>
+<br>
+<section>
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo"><i class="large material-icons">local_drink</i>The To-Brew List</a> 
+        <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="breweries.html"><i class="material-icons left">search</i>Find a Brewery</a></type></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="breweries.html"><i class="material-icons left">search</i>Find a Brewery</a></type></li>
+            <li><a href="login.html">Login</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</section>
+
+<br>
+
+<div class="container" id="reg">
+    <div class="row">
+        <form class="col s12" id="reg-form">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="active" required>
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate" required>
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s9">
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s9">
+                    <input id="password" type="password" class="validate" minlength="6" required>
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <button class="btn-large waves-effect waves-light orange lighten-1" type="submit" name="action">Register
+                        <i class="material-icons right">done</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    
+</body>
+</html>

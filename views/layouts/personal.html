@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<title>My To-Brew Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../../public/assets/css/personal-style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" id="bar-theme" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>The To-Brew List</a>
+ </div>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Robyn Harka</h4>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i>Beer Drinker</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i>Raleigh, NC</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>Food Lover</p>
+        </div>
+      </div>
+      <br> 
+ 
+    <br>
+      <!-- Accordion -->
+    <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Followers</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>Mary Dunkin</p>
+            <p>Bob Burger</p>
+            <p>King Larry</p>
+            <p>Eddy Teddy</p>
+
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>Upcoming Trip Plans</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Red Oak Brewery</p>
+            <p>Clouds Brewing</p>
+            <p>Big Boss Brewery</p>
+    
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i>Favorite New Beer</button>
+          <div id="Demo3" class="w3-hide w3-container">
+            <p>Smoke'em if you Gourd'em</p>
+          </div>
+        </div>      
+    </div>
+    <br>
+
+    <div class="w3-card w3-round w3-white"></div>
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">My To-Brew List</h2>
+        <input type="text" id="myInput" placeholder="Brewery Name">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+    
+    <ul id="myUL">
+        <li>Red Oak Brewery</li>
+        <li class="checked">Appalachian Mountain Brewery</li>
+        <li>Black Creek Brewery</li>
+        <li>Clouds Brewing</li>
+        <li>Natty Greene's Pub and Brewery Co.</li>
+        <li>Big Boss Brewery</li>
+    </ul>
+
+      <br>
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">To-Brew Blog</h6>
+              <p contenteditable="true" class="w3-border w3-padding"></p>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <h4>Appalachian Mountain Brewery</h4><br>
+        <hr class="w3-clear">
+        <p>Loved it. I had the Belgian and my friend had one of the ciders. They've done a spot-on job with the decor. There's games,
+        plenty of outdoor seating etc. Didn't have a chance to try the food but next I'm in the area I will be back for sure!</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <h4>Compass Rose Brewery</h4><br>
+        <hr class="w3-clear">
+        <p>Compass Rose Brewery has a beautiful and spacious tasting room. This Saturday evening, they had a party taking place in one
+        corner of the room and it barely made a dent in the space. They had a really good band and a food truck. The beers we tried
+        here were delicious. The Smoke'em if you Gourd'em is as a really different version of a pumpkin beer, not very pumpkin flavored
+        but a nice smoky spiced beer. Man-of-War (Belgium strong ale -12.9%ABV) is seriously one of the best NC beers. Makes for
+        a cheap date with high ABV but yummy none the less.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+ 
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Next Brewery Trip:</p>
+          <p><strong>Red Oak</strong></p>
+          <p>Friday 6:00pm</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Website</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Follower Request</p>
+          <span>Lucy Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <!-- <div class="w3-card w3-round w3-white w3-padding-16 w3-center"> -->
+
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d5">
+  <a class="white-text" id="bar-theme" href="https://github.com/To-Brew-List/To-Brew-List" target="_blank">© 2018 The To-Brew List</a>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// To-Brew List----------
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html> 

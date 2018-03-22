@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>The To=Brew List Login</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../public/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../public/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+</head>
+
+<style>
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    #intro {
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 35px;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    body {
+        background-image: url("https://www.pabstmansion.com/PabstMansion/media/SiteAssets/SpanCTAs/pabst-brewery-workers_1920-cropped_1.jpg");
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;  
+        background-color: #EEE;
+        
+    }
+
+    .input-field input[type=date]:focus + label,
+    .input-field input[type=text]:focus + label,
+    .input-field input[type=email]:focus + label,
+    .input-field input[type=password]:focus + label {
+        color: #ffa726;
+    }
+
+    .input-field input[type=date]:focus,
+    .input-field input[type=text]:focus,
+    .input-field input[type=email]:focus,
+    .input-field input[type=password]:focus {
+        border-bottom: 2px solid #ffa726;
+        box-shadow: none;
+    }
+</style>
+
+<body>
+
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo"><i class="large material-icons">local_drink</i>The To-Brew List</a> 
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="breweries.html"><i class="material-icons left">search</i>Find a Brewery</a></type></li>
+                <li><a href="get-started.html">Get Started</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="breweries.html"><i class="material-icons left">search</i>Find a Brewery</a></type></li>
+                <li><a href="get-started.html">Get Started</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+    </nav>
+
+    <div class="section"></div>
+    <main>
+    <center>
+        <h5 class="orange-text darken-4" id="intro">Please login to your account</h5>
+     <div class="section"></div>
+
+     <div class="container">
+        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+            <form class="col s12" method="post">
+                <div class='row'>
+                    <div class='col s12'></div>
+                </div>
+ 
+        <div class='row'>
+             <div class='input-field col s12'>
+                <input class='validate' type='email' name='email' id='email' />
+                <label for='email'>Enter your email</label>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='input-field col s12'>
+                <input class='validate' type='password' name='password' id='password' />
+                <label for='password'>Enter your password</label>
+            </div>
+                <label style='float: right;'>
+                <a class='orange-text lighten-1' href='#!'><b>Forgot Password?</b></a>
+                </label>
+        </div>
+
+        <br />
+        <center>
+        <div class='row'>
+            <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect waves-light orange lighten-1'>Login</button>
+        </div>
+        </center>
+            </form>
+        </center>
+        </main>
+
+    
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    
+</body>
+</html>
